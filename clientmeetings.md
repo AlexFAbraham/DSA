@@ -1,6 +1,6 @@
-#Client Meetings
+# Client Meetings
 
-##9/24/2020
+## 9/24/2020
 
 - [ ] On home page should be newest new item
 - [ ] Discussion and blog should be on the top somewhere
