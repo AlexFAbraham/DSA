@@ -25,4 +25,5 @@ https://github.com/GGC-SD/dsa
 #### PROGRESS TRACKING TOOL AND URL
 JIRA
 
-TODO add techology
+Azure
+MSSQL server
