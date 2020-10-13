@@ -5,16 +5,17 @@
   <meta charset="utf-8">
 
   <!------>
-  <title>DSAs SIgnUp page</title>
+  <title>Login</title>
 
   <style>
   	#wrapper
     	{width: 500px;
         margin-left: auto;
         margin-right: auto;
-        background-color: #eaeaea;
+        margin-top:10%;
+        background-color:#375BD2;
         box-shadow: 5px 5px 5px #1e1e1e;
-        padding-top: 10px;
+        padding-top: 50px;
         padding-bottom: 10px;}
     h1, p
     	{text-align: center;}
@@ -33,12 +34,55 @@
     button
     	{display: block;
         margin: auto;}
+        w3-bar-item w3-button navtext { 
+        
+font-family: Rambla;
+
+    }
   </style>
 </head>
 <body>
-
+    <!DOCTYPE html>
+    <html lang="en" dir="ltr">
+      <head>
+        <meta charset="utf-8">
+    
+    
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href='https://fonts.googleapis.com/css?family=Rambla' rel='stylesheet'>
+        <link rel="stylesheet" href="styles.css">
+    
+        <!------>
+        <title>GGC's DSA Hub</title>
+    
+        <div class="Banner w3-bar">
+          <div class="w3-left">
+    
+          <a href="#"class="w3-bar-item w3-button navhead">GGC's DSA Hub</a>
+          </div>
+    
+          <div class="w3-center">
+    
+          <a href="index.html" class="">Home</a>
+          <a href="BlogPost.html"class="w3-bar-item w3-button navtext">Blog</a>
+    </div>
+    
+          <div class="w3-right">
+    
+    
+          <a href="#"class="w3-bar-item w3-button navtext">Login</a>
+          <a href="#"class="w3-bar-item w3-button navtext">Sign up</a>
+          </div>
+    
+        </div>
+ 
+    
+    
+      </body>
+    </html>
+    
 <div id = "wrapper">
-<h1>DSA Data Science and Analytics</h1>
+<h1>Login</h1>
 	<form method = "post" action = "index.html">
 		<label for = "studentID">Username: </label>
         <input type = "text" id = "studentID" name = "studentID" required = "re"><br>
