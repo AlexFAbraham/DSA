@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+
+  <!------>
+  <title>DSAs SIgnUp page</title>
+
+  <style>
+  	#wrapper
+    	{width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #eaeaea;
+        box-shadow: 5px 5px 5px #1e1e1e;
+        padding-top: 10px;
+        padding-bottom: 10px;}
+    h1, p
+    	{text-align: center;}
+    #in, img
+    	{width: 100px;
+        display: block;
+        margin: auto;}
+    label
+    	{float: left;
+        width: 200px;
+        text-align: right;
+        padding-right: 10px;
+        clear: left;}
+    input
+    	{display: block;}
+    button
+    	{display: block;
+        margin: auto;}
+  </style>
+</head>
+<body>
+
+<div id = "wrapper">
+<h1>DSA Data Science and Analytics</h1>
+	<form method = "post" action = "index.html">
+		<label for = "studentID">Username: </label>
+        <input type = "text" id = "studentID" name = "studentID" required = "re"><br>
+        
+        <label for = "paw">Password: </label>
+        <input type = "text" id = "paw" name = "paw" required = "re"><br>
+        <input type = "image" id = "in" src = "images\signin.jpg" alt = "Login button"> <br>
+	</form>
+    
+    <hr>
+    <form>
+    	<p>Don't have an account?</p>
+        	<button type = "submit" formaction = "signup.html">
+            	<img src = "images\signup.jpg" alt = "Signup button"><br>
+                Sign up to gain access to the website.
+            </button>
+    </form>
+</div>
+
+</body>
+</html>
