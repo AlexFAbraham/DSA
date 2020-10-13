@@ -23,5 +23,4 @@
 https://github.com/GGC-SD/dsa
 
 #### PROGRESS TRACKING TOOL AND URL
-JIRA/TRELLO
-https://trello.com/invite/b/2c2gXleB/a09ecdb7a48804b8c266b47c30935fcd/data-science-and-analytics
+JIRA
