@@ -34,11 +34,7 @@
     button
     	{display: block;
         margin: auto;}
-        w3-bar-item w3-button navtext { 
-        
-font-family: Rambla;
 
-    }
   </style>
 </head>
 <body>
@@ -61,17 +57,12 @@ font-family: Rambla;
           <a href="#"class="w3-bar-item w3-button navhead">GGC's DSA Hub</a>
           </div>
     
-          <div class="w3-center">
-    
-          <a href="index.html" class="">Home</a>
-          <a href="BlogPost.html"class="w3-bar-item w3-button navtext">Blog</a>
-    </div>
-    
+        
           <div class="w3-right">
     
     
-          <a href="#"class="w3-bar-item w3-button navtext">Login</a>
-          <a href="#"class="w3-bar-item w3-button navtext">Sign up</a>
+            <a href="index.html" class="w3-bar-item w3-button navtext">Home</a>
+            <a href="BlogPost.html"class="w3-bar-item w3-button navtext">Blog</a>
           </div>
     
         </div>
@@ -82,18 +73,28 @@ font-family: Rambla;
     </html>
     
 <div id = "wrapper">
-<h1>Login</h1>
+<h1 style = "font-family: Rambla;">Login</h1>
 	<form method = "post" action = "index.html">
 		<label for = "studentID">Username: </label>
         <input type = "text" id = "studentID" name = "studentID" required = "re"><br>
         
         <label for = "paw">Password: </label>
         <input type = "text" id = "paw" name = "paw" required = "re"><br>
-        <input type = "image" id = "in" src = "images\signin.jpg" alt = "Login button"> <br>
+        <button style = "width: 184px;
+        height: 28px;
+        width:155px;
+        left: 627px;
+        top: 573px;
+        
+        background: #FFFFFF;
+        border: 2px solid #000000;
+        margin-right:29%;
+        box-sizing: border-box;"input type = "image" id = "in" src = "images\signin.jpg" alt = "Login button">LOGIN</button>
+         <br>
 	</form>
     
     <hr>
-    <form>
+    <form style="align-content: center;">
     	<p>Don't have an account?</p>
         	<button type = "submit" formaction = "signup.html">
             	<img src = "images\signup.jpg" alt = "Signup button"><br>
