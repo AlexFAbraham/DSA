@@ -32,5 +32,3 @@ GO
 EXEC new_user @username = 'aiboro', @user_password = 'Admin789', @f_name= 'Agapitus', @m_initial='',
      @l_name='Iboro',@email= 'aiboro@ggc.edu',  @phone_number= '(123)456-7890', @major ='Software Development',
      @scholastic_year = 'Senior', @roleID = 3;
-
-     SELECT * FROM users;
