@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{ExZD:function(e,n,a){"use strict";a.r(n);var t=a("q1tI"),l=a.n(t),i=a("Bl7J"),r=a("vrFN");n.default=function(){return l.a.createElement(i.a,null,l.a.createElement(r.a,{title:"landingPage"}),l.a.createElement("h1",null,"Overview of DSA"),l.a.createElement("img",{src:"../images/web-design-2038872_1920.jpg",alt:"img"}))}}}]);
+//# sourceMappingURL=component---src-pages-landingpage-js-c0cfb39a5f9ea63c4aab.js.map
