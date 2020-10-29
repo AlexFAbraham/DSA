@@ -22,7 +22,7 @@ const DomainPage = () => (
 
       <Col md="6">
       <StaticQuery 
-    query ={indexQuery }
+    query ={domainQuery }
     render = {data => {
       return(
         <div>
@@ -31,7 +31,7 @@ const DomainPage = () => (
             key={node.id}
             title = {node.frontmatter.title}
             author={node.frontmatter.author}
-            path = {node.frontmatter.path}
+            slug = {node.fields.slug}
             tags = {node.frontmatter.tags}
             date = {node.frontmatter.date}
             body = {node.excerpt}
@@ -54,7 +54,7 @@ const DomainPage = () => (
      </Layout>
 )
 
-const indexQuery = graphql`
+const domainQuery = graphql`
 query{
   allMarkdownRemark(sort:{ fields: [frontmatter___date], order: DESC}){
     edges{
@@ -64,7 +64,6 @@ query{
           title
           date(formatString: "MMM Do YYYY") 
           author
-          path
           tags
           image{
             childImageSharp{
@@ -73,6 +72,9 @@ query{
               }
             }
           }
+        }
+        fields{
+          slug
         }
         excerpt
       }

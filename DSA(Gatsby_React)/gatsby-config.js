@@ -38,19 +38,10 @@ module.exports = {
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `@msigwart/gatsby-source-google-calendar`,
-      options: {
-        calendarIds: [
-          'abc...1234@group.calendar.google.com',
-        ],
-        // options to retrieve the next 10 upcoming events
-        timeMin: (new Date()).toISOString(),
-        maxResults: 10,
-        singleEvents: true,
-        orderBy: 'startTime',
-      }
-    },
+    
+
+ 
+    
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

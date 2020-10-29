@@ -2,9 +2,9 @@
 title: 'Third Post- Being really thorough with testing'
 date: 2020-10-14 03:22:00
 author: 'Alex Abraham'
-path: '/third-post'
 image: '../../images/business-1839876_1920 (1).jpg'
 tags:
+- events
 - design
 - tutorial
 ---

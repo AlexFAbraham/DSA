@@ -17,7 +17,11 @@ import {
   //NavbarText
 } from 'reactstrap';
 
+
+
+
 class Header extends React.Component{
+  
   constructor(props){ 
     super(props);
 
@@ -32,12 +36,17 @@ class Header extends React.Component{
     });
   }
   render(){
+
+
     return(
+
+      
       <Navbar fixed="top" expand="sm" light>
         <div className="container">
         <NavbarBrand href="/landingpage">{this.props.siteTitle}</NavbarBrand>
         <NavbarToggler onClick={this.toggle} />
         <Collapse isOpen={this.state.isOpen} navbar>
+       
 
         <Nav className="ml-auto" navbar>
         <NavItem>
@@ -51,14 +60,21 @@ class Header extends React.Component{
             </NavItem>
             </Nav>
           
+
+          
           <Nav className="ml-auto" navbar>
             
             <NavItem>
-              <NavLink href="">Login</NavLink>
+              <NavLink>Login</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="">Sign up</NavLink>
+              <NavLink>Log out</NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink href='/app/profile'>Profile</NavLink>
+             
+            </NavItem>
+
             <NavItem>
               <NavLink href="/about">About</NavLink>
             </NavItem>
@@ -68,7 +84,7 @@ class Header extends React.Component{
         </Collapse>
         </div>
       </Navbar>
-
+      
         
     
     );

@@ -8,8 +8,15 @@ import Landingpageimg from '../images/priscilla-du-preez-XkKCui44iM0-unsplash.jp
 import Sidebar from '../components/Sidebar'
 
 
+
 const landingpage = () => (
+
+  
+
+
   <Layout>
+
+
     <SEO title="landingPage"/>
     <Row>
     <Col md="6">

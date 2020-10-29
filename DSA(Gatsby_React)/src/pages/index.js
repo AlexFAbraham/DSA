@@ -6,6 +6,7 @@ import Post from '../components/Post'
 import {Row, Col} from 'reactstrap';
 //import Sidebar from '../components/Sidebar'
 import Calender from '../components/Calender'
+import tagsSideBar from '../components/TagsSideBar'
 
 
 import Layout from "../components/layout"
@@ -18,7 +19,14 @@ const IndexPage = () => (
     <SEO title="Home" />
     <h1>News Page</h1>
     <Row>
-     <Col md="2"></Col>
+     <Col md="2">
+     <br/><br/>
+     <div>
+        
+        <tagsSideBar/>
+        
+        </div>  
+     </Col>
 
       <Col md="6">
       <StaticQuery 
@@ -31,7 +39,7 @@ const IndexPage = () => (
               key={node.id}
             title = {node.frontmatter.title}
             author={node.frontmatter.author}
-            path = {node.frontmatter.path}
+            slug = {node.fields.slug}
             tags = {node.frontmatter.tags}
             date = {node.frontmatter.date}
             body = {node.excerpt}
@@ -44,7 +52,7 @@ const IndexPage = () => (
     />
 
       </Col>
-      <Col md="3">
+      <Col md="4">
         <div>
           <Calender/>
           </div>
@@ -64,7 +72,6 @@ query{
           title
           date(formatString: "MMM Do YYYY") 
           author
-          path
           tags
           image{
             childImageSharp{
@@ -72,10 +79,17 @@ query{
                 ...GatsbyImageSharpFluid
               }
             }
-          }
+            
+          } 
+          
         }
+        fields{
+          slug
+        }
+        
         excerpt
       }
+      
     }
   }
 }

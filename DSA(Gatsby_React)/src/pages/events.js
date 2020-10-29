@@ -6,6 +6,8 @@ import Post from '../components/Post'
 import {Row, Col} from 'reactstrap';
 //import Sidebar from '../components/Sidebar'
 import Calender from '../components/Calender'
+
+
 import Layout from "../components/layout"
 //import Image from "../components/image"
 import SEO from "../components/seo"
@@ -13,23 +15,23 @@ import SEO from "../components/seo"
 
 const EventsPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Events" />
     <h1>Events Page</h1>
     <Row>
      <Col md="2"></Col>
 
       <Col md="6">
       <StaticQuery 
-    query ={indexQuery }
+    query ={eventsQuery }
     render = {data => {
       return(
         <div>
           {data.allMarkdownRemark.edges.map(({node}) => (
             <Post 
-            key={node.id}
+              key={node.id}
             title = {node.frontmatter.title}
             author={node.frontmatter.author}
-            path = {node.frontmatter.path}
+            slug = {node.fields.slug}
             tags = {node.frontmatter.tags}
             date = {node.frontmatter.date}
             body = {node.excerpt}
@@ -52,7 +54,7 @@ const EventsPage = () => (
      </Layout>
 )
 
-const indexQuery = graphql`
+const eventsQuery = graphql`
 query{
   allMarkdownRemark(sort:{ fields: [frontmatter___date], order: DESC}){
     edges{
@@ -62,7 +64,6 @@ query{
           title
           date(formatString: "MMM Do YYYY") 
           author
-          path
           tags
           image{
             childImageSharp{
@@ -70,10 +71,17 @@ query{
                 ...GatsbyImageSharpFluid
               }
             }
-          }
+            
+          } 
+          
         }
+        fields{
+          slug
+        }
+        
         excerpt
       }
+      
     }
   }
 }

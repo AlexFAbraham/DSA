@@ -6,6 +6,7 @@ const preferDefault = m => (m && m.default) || m
 
 exports.components = {
   "component---cache-dev-404-page-js": hot(preferDefault(require("C:\\Users\\Alex\\Desktop\\DSA(React_Gatsby)\\.cache\\dev-404-page.js"))),
+  "component---src-components-tags-side-bar-js": hot(preferDefault(require("C:\\Users\\Alex\\Desktop\\DSA(React_Gatsby)\\src\\components\\TagsSideBar.js"))),
   "component---src-pages-404-js": hot(preferDefault(require("C:\\Users\\Alex\\Desktop\\DSA(React_Gatsby)\\src\\pages\\404.js"))),
   "component---src-pages-about-js": hot(preferDefault(require("C:\\Users\\Alex\\Desktop\\DSA(React_Gatsby)\\src\\pages\\about.js"))),
   "component---src-pages-domain-js": hot(preferDefault(require("C:\\Users\\Alex\\Desktop\\DSA(React_Gatsby)\\src\\pages\\domain.js"))),
@@ -15,6 +16,7 @@ exports.components = {
   "component---src-pages-page-2-js": hot(preferDefault(require("C:\\Users\\Alex\\Desktop\\DSA(React_Gatsby)\\src\\pages\\page-2.js"))),
   "component---src-pages-tags-js": hot(preferDefault(require("C:\\Users\\Alex\\Desktop\\DSA(React_Gatsby)\\src\\pages\\tags.js"))),
   "component---src-pages-team-js": hot(preferDefault(require("C:\\Users\\Alex\\Desktop\\DSA(React_Gatsby)\\src\\pages\\team.js"))),
-  "component---src-pages-using-typescript-tsx": hot(preferDefault(require("C:\\Users\\Alex\\Desktop\\DSA(React_Gatsby)\\src\\pages\\using-typescript.tsx")))
+  "component---src-pages-using-typescript-tsx": hot(preferDefault(require("C:\\Users\\Alex\\Desktop\\DSA(React_Gatsby)\\src\\pages\\using-typescript.tsx"))),
+  "component---src-templates-single-post-js": hot(preferDefault(require("C:\\Users\\Alex\\Desktop\\DSA(React_Gatsby)\\src\\templates\\single-post.js")))
 }
 

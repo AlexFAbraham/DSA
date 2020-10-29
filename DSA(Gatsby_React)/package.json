@@ -5,13 +5,17 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@auth0/auth0-react": "^1.1.0",
     "@msigwart/gatsby-source-google-calendar": "^0.2.1",
+    "add": "^2.0.6",
     "bootstrap": "^4.5.2",
+    "disqus-react": "^1.0.10",
     "docz": "^2.3.1",
     "gatsby": "^2.24.66",
     "gatsby-image": "^2.4.20",
     "gatsby-plugin-catch-links": "^2.3.15",
     "gatsby-plugin-manifest": "^2.4.32",
+    "gatsby-plugin-netlify-admin": "^0.1.1",
     "gatsby-plugin-offline": "^3.2.29",
     "gatsby-plugin-react-helmet": "^3.3.12",
     "gatsby-plugin-sass": "^2.3.14",
@@ -20,12 +24,15 @@
     "gatsby-theme-docz": "^2.3.1",
     "gatsby-transformer-remark": "^2.8.38",
     "gatsby-transformer-sharp": "^2.5.16",
+    "lodash": "^4.17.20",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
-    "reactstrap": "^8.6.0"
+    "react-use-auth": "^0.9.0-6",
+    "reactstrap": "^8.6.0",
+    "yarn": "^1.22.10"
   },
   "devDependencies": {
     "prettier": "2.1.2"
