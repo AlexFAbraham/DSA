@@ -11,3 +11,8 @@
 - [ ] List of categories listed somewhere
 - [ ] Gatsby has tags and categories implemented
 - [ ] Menu | Domain Electives |
+
+## 10/21/2020
+Meeting
+- [ ] Drop sql database
+- [ ] Implement login & sign up through Gatsby plugins
