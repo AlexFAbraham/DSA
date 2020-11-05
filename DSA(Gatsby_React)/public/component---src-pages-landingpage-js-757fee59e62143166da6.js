@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{ExZD:function(e,n,a){"use strict";a.r(n);var t=a("q1tI"),l=a.n(t),r=a("Bl7J"),c=a("vrFN");n.default=function(){return l.a.createElement(r.a,null,l.a.createElement(c.a,{title:"landingPage"}),l.a.createElement("h1",null,"Overview of DSA"),l.a.createElement("img",{src:"../images/andrew-neel-cckf4TsHAuw-unsplash.jpg",alt:""}),l.a.createElement("p",null))}}}]);
-//# sourceMappingURL=component---src-pages-landingpage-js-757fee59e62143166da6.js.map
