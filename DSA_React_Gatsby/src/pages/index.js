@@ -6,7 +6,6 @@ import Post from '../components/Post'
 import {Row, Col} from 'reactstrap';
 //import Sidebar from '../components/Sidebar'
 import Calender from '../components/Calender'
-import TagsSideBar from '../components/TagsSideBar'
 
 
 import Layout from "../components/layout"
@@ -16,14 +15,13 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="News" />
     <h1>News Page</h1>
     <Row>
      <Col md="2">
      <br/><br/>
      <div>
-        
-        
+       
         </div>  
      </Col>
 

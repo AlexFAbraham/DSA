@@ -78,6 +78,9 @@ class Header extends React.Component{
           
           <Nav className="ml-auto" navbar>
             
+
+
+
             <NavItem>
               
               <NavLink  href="" onClick ={() => {initNetlifyIdentity(); openNetlifyModel()}}>Login</NavLink>
@@ -85,7 +88,7 @@ class Header extends React.Component{
              
             </NavItem>
           
-          
+          <NavLink href="/tags">Tags</NavLink>
 
             <NavItem>
               <NavLink href="/about">About</NavLink>

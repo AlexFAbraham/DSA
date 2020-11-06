@@ -20,7 +20,7 @@ exports.createPages = ({actions, graphql}) => {
 
     const templates = {
         singlePost: path.resolve('src/templates/single-post.js'),
-        tagsPage: path.resolve('src/components/TagsSideBar.js'),
+        tagsPage: path.resolve('src/templates/tags-page.js'),
     }
 
     return graphql(`
@@ -67,7 +67,7 @@ exports.createPages = ({actions, graphql}) => {
         //[design: 5, code: 6,...]
         let tagPostCounts = {}
         tags.forEach(tag => {
-            tagPostCounts[tag] == (tagPostCounts[tag] || 0) + 1; 
+            tagPostCounts[tag] = (tagPostCounts[tag] || 0) + 1; 
         })
 
         console.log(tags)
@@ -77,7 +77,7 @@ exports.createPages = ({actions, graphql}) => {
 
         // Create tags page
         createPage({
-            path:'/TagsSideBar',
+            path:'/tags',
             component: templates.tagsPage,
             context: {
                 tags,
