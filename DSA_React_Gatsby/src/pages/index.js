@@ -7,60 +7,58 @@ import {Row, Col} from 'reactstrap';
 //import Sidebar from '../components/Sidebar'
 import Calender from '../components/Calender'
 
-
+import PaginationLinks from '../components/PaginationLinks'
 import Layout from "../components/layout"
 //import Image from "../components/image"
 import SEO from "../components/seo"
 //import { Row } from "reactstrap"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="News" />
-    <h1>News Page</h1>
-    <Row>
-     <Col md="2">
-         
-     
-     <br/><br/>
-     <div>
-       
-        </div>  
-     </Col>
+const IndexPage = () => {
+  const postsPerPage = 3
+  let numberOfPages
+  return (
 
+    <Layout pageTitle="CodeBlog">
+      <SEO title="News" keywords={[`gatsby`, `application`, `react`]} />
+      <Row>
+      <Col md="2"></Col>
       <Col md="6">
-      <StaticQuery 
-    query ={indexQuery }
-    render = {data => {
-      return(
-        <div>
-          {data.allMarkdownRemark.edges.map(({node}) => (
-            <Post 
-              key={node.id}
-            title = {node.frontmatter.title}
-            author={node.frontmatter.author}
-            slug = {node.fields.slug}
-            tags = {node.frontmatter.tags}
-            date = {node.frontmatter.date}
-            body = {node.excerpt}
-            fluid = {node.frontmatter.image.childImageSharp.fluid}/>
-          ))}
-        </div>
-      )
-    }}
-    
-    />
-
+      <StaticQuery
+        query={indexQuery}
+        render={data => {
+          numberOfPages = Math.ceil(
+            data.allMarkdownRemark.totalCount / postsPerPage
+          )
+          return (
+            <div>
+              {data.allMarkdownRemark.edges.map(({ node }) => (
+                <Post
+                  key={node.id}
+                  title={node.frontmatter.title}
+                  slug={node.fields.slug}
+                  author={node.frontmatter.author}
+                  body={node.excerpt}
+                  date={node.frontmatter.date}
+                  fluid={node.frontmatter.image.childImageSharp.fluid}
+                  tags={node.frontmatter.tags}
+                />
+              ))}
+              <PaginationLinks currentPage={1} numberOfPages={numberOfPages} />
+            </div>
+          )
+        }}
+      />
       </Col>
-      <Col md="4">
+      <Col md="3">
         <div>
           <Calender/>
           </div>
-      </Col>
-    </Row>
+          </Col>
+          </Row>
+    </Layout>
     
-     </Layout>
-)
-
+  )
+}
 const indexQuery = graphql`
 query{
   allMarkdownRemark(sort:{ fields: [frontmatter___date], order: DESC}){
@@ -71,6 +69,7 @@ query{
           title
           date(formatString: "MMM Do YYYY") 
           author
+
           tags
           image{
             childImageSharp{

@@ -12,6 +12,9 @@ exports.components = {
   "component---src-pages-page-2-js": () => import("./../../../src/pages/page-2.js" /* webpackChunkName: "component---src-pages-page-2-js" */),
   "component---src-pages-team-js": () => import("./../../../src/pages/team.js" /* webpackChunkName: "component---src-pages-team-js" */),
   "component---src-pages-using-typescript-tsx": () => import("./../../../src/pages/using-typescript.tsx" /* webpackChunkName: "component---src-pages-using-typescript-tsx" */),
-  "component---src-templates-single-post-js": () => import("./../../../src/templates/single-post.js" /* webpackChunkName: "component---src-templates-single-post-js" */)
+  "component---src-templates-post-list-js": () => import("./../../../src/templates/post-list.js" /* webpackChunkName: "component---src-templates-post-list-js" */),
+  "component---src-templates-single-post-js": () => import("./../../../src/templates/single-post.js" /* webpackChunkName: "component---src-templates-single-post-js" */),
+  "component---src-templates-tag-posts-js": () => import("./../../../src/templates/tag-posts.js" /* webpackChunkName: "component---src-templates-tag-posts-js" */),
+  "component---src-templates-tags-page-js": () => import("./../../../src/templates/tags-page.js" /* webpackChunkName: "component---src-templates-tags-page-js" */)
 }
 
