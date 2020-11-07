@@ -19,6 +19,8 @@ const IndexPage = () => (
     <h1>News Page</h1>
     <Row>
      <Col md="2">
+         
+     
      <br/><br/>
      <div>
        

@@ -15,8 +15,6 @@ exports.components = {
   "component---src-pages-page-2-js": hot(preferDefault(require("C:\\Users\\Alex\\Desktop\\DSA(Github)\\dsa\\DSA_React_Gatsby\\src\\pages\\page-2.js"))),
   "component---src-pages-team-js": hot(preferDefault(require("C:\\Users\\Alex\\Desktop\\DSA(Github)\\dsa\\DSA_React_Gatsby\\src\\pages\\team.js"))),
   "component---src-pages-using-typescript-tsx": hot(preferDefault(require("C:\\Users\\Alex\\Desktop\\DSA(Github)\\dsa\\DSA_React_Gatsby\\src\\pages\\using-typescript.tsx"))),
-  "component---src-templates-single-post-js": hot(preferDefault(require("C:\\Users\\Alex\\Desktop\\DSA(Github)\\dsa\\DSA_React_Gatsby\\src\\templates\\single-post.js"))),
-  "component---src-templates-tag-posts-js": hot(preferDefault(require("C:\\Users\\Alex\\Desktop\\DSA(Github)\\dsa\\DSA_React_Gatsby\\src\\templates\\tag-posts.js"))),
-  "component---src-templates-tags-page-js": hot(preferDefault(require("C:\\Users\\Alex\\Desktop\\DSA(Github)\\dsa\\DSA_React_Gatsby\\src\\templates\\tags-page.js")))
+  "component---src-templates-single-post-js": hot(preferDefault(require("C:\\Users\\Alex\\Desktop\\DSA(Github)\\dsa\\DSA_React_Gatsby\\src\\templates\\single-post.js")))
 }
 
