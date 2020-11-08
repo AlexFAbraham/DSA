@@ -4,7 +4,7 @@ import { graphql, Link, StaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
  
 
-const Sidebar = () => (
+const Sidebar = ({slug}) => (
     <div>
        <Card>
         <CardBody>
@@ -32,12 +32,12 @@ const Sidebar = () => (
                <div>
                    {data.allMarkdownRemark.edges.map(({node}) => (
                     <Card key ={node.id}>
-                        <Link to = {node.fields.slug}>
+                        <Link to={`/${slug}/`}>
                             <Img className="card-image-top" fluid ={node.frontmatter.image.childImageSharp.fluid}/>
                         </Link>
                         <CardBody>
                             <CardTitle>
-                                <Link to = {node.fields.slug}>
+                            <Link to={`/${slug}/`}>
                                     {node.frontmatter.title}
                                 </Link>
                             </CardTitle>

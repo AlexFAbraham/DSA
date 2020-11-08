@@ -1,28 +1,16 @@
-
-import React from "react"
-//import { Link } from "gatsby"
-import { graphql, StaticQuery} from 'gatsby'
+import React from 'react'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import { graphql, StaticQuery } from 'gatsby'
 import Post from '../components/Post'
-import {Row, Col} from 'reactstrap';
-//import Sidebar from '../components/Sidebar'
-import Calender from '../components/Calender'
-
 import PaginationLinks from '../components/PaginationLinks'
-import Layout from "../components/layout"
-//import Image from "../components/image"
-import SEO from "../components/seo"
-//import { Row } from "reactstrap"
 
 const IndexPage = () => {
-  const postsPerPage = 3
+  const postsPerPage = 2
   let numberOfPages
   return (
-
     <Layout pageTitle="CodeBlog">
-      <SEO title="News" keywords={[`gatsby`, `application`, `react`]} />
-      <Row>
-      <Col md="2"></Col>
-      <Col md="6">
+      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
       <StaticQuery
         query={indexQuery}
         render={data => {
@@ -48,49 +36,41 @@ const IndexPage = () => {
           )
         }}
       />
-      </Col>
-      <Col md="3">
-        <div>
-          <Calender/>
-          </div>
-          </Col>
-          </Row>
     </Layout>
-    
   )
 }
-const indexQuery = graphql`
-query{
-  allMarkdownRemark(sort:{ fields: [frontmatter___date], order: DESC}){
-    edges{
-      node{
-        id
-        frontmatter{
-          title
-          date(formatString: "MMM Do YYYY") 
-          author
 
-          tags
-          image{
-            childImageSharp{
-              fluid(maxWidth: 600){
-                ...GatsbyImageSharpFluid
+const indexQuery = graphql`
+  query indexQuery {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 2
+    ) {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date(formatString: "MMM Do YYYY")
+            author
+            tags
+            image {
+              childImageSharp {
+                fluid(maxWidth: 600) {
+                  ...GatsbyImageSharpFluid
+                }
               }
             }
-            
-          } 
-          
+          }
+          fields {
+            slug
+          }
+          excerpt
         }
-        fields{
-          slug
-        }
-        
-        excerpt
       }
-      
     }
   }
-}
 `
 
 export default IndexPage

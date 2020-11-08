@@ -16,13 +16,19 @@ const SinglePost = ({ data, pageContext }) => {
     const disqusConfig = {
         identifier: data.markdownRemark.id,
         title: post.title,
-        url: baseUrl + pageContext.slug
+        url: baseUrl + pageContext.slug,
     }
     return (
         
        <Layout>
-           <SEO title={post.title}/>
+           <SEO title={post.title}
+                keywords={post.tags}
+                description={post.description}
+                url= {baseUrl}
+                //pathname={location.pathname}
+                />
                 <h1>{post.title}</h1>
+                
             <Row>
                 <Col md = "8">
                         <Card>
@@ -36,8 +42,9 @@ const SinglePost = ({ data, pageContext }) => {
                                 <ul className = "post-tags">
                                     {post.tags.map(tag => (
                                         <li key ={tag}>
-                                            <Link to={`/tag/${slugify(tag)}`}></Link>
+                                            <Link to={`/tag/${slugify(tag)}`}>
                                                 <Badge color = "primary">{tag}</Badge>
+                                                </Link>
                                             </li>
                                         ))}
                                         
