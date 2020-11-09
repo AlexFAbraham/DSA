@@ -1,11 +1,11 @@
 import React from "react"
 //import { Link } from "gatsby"
-import {Row,Col} from 'reactstrap';
+//import {Row,Col} from 'reactstrap';
 import Layout from "../components/layout"
 //import Image from "../components/image"
 import SEO from "../components/seo"
 import Landingpageimg from '../images/priscilla-du-preez-XkKCui44iM0-unsplash.jpg'
-import Sidebar from '../components/Sidebar'
+//import Sidebar from '../components/Sidebar'
 
 
 
