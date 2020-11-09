@@ -9,7 +9,7 @@ import '../styles/index.scss'
 
 import { Row, Col } from 'reactstrap'
 
-const Layout = ({ authorImageFluid, children, pageTitle, postAuthor }) => (
+const Layout = ({ children, pageTitle}) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {

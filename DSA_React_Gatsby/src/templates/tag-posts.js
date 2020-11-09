@@ -2,8 +2,8 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Post from '../components/Post'
-import {Col,Row} from 'reactstrap';
-import Sidebar from '../components/Sidebar'
+//import {Col,Row} from 'reactstrap';
+//import Sidebar from '../components/Sidebar'
 
 
 

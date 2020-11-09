@@ -4,9 +4,9 @@ import {
   CardTitle,
   CardBody,
   CardText,
-  Form,
-  FormGroup,
-  Input,
+  //Form,
+  //FormGroup,
+ // Input,
 } from 'reactstrap'
 import { graphql, StaticQuery, Link } from 'gatsby'
 import Img from 'gatsby-image'
