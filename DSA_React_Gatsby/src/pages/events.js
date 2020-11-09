@@ -1,90 +1,76 @@
-
-import React from "react"
-//import { Link } from "gatsby"
-import { graphql, StaticQuery} from 'gatsby'
+import React from 'react'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import { graphql, StaticQuery } from 'gatsby'
 import Post from '../components/Post'
-import {Row, Col} from 'reactstrap';
-//import Sidebar from '../components/Sidebar'
-import Calender from '../components/Calender'
+import PaginationLinks from '../components/PaginationLinks'
 
-
-import Layout from "../components/layout"
-//import Image from "../components/image"
-import SEO from "../components/seo"
-//import { Row } from "reactstrap"
-
-const EventsPage = () => (
-  <Layout>
-    <SEO title="Events" />
-    <h1>Events Page</h1>
-    <Row>
-     <Col md="2"></Col>
-
-      <Col md="6">
-      <StaticQuery 
-    query ={eventsQuery }
-    render = {data => {
-      return(
-        <div>
-          {data.allMarkdownRemark.edges.map(({node}) => (
-            <Post 
-              key={node.id}
-            title = {node.frontmatter.title}
-            author={node.frontmatter.author}
-            slug = {node.fields.slug}
-            tags = {node.frontmatter.tags}
-            date = {node.frontmatter.date}
-            body = {node.excerpt}
-            fluid = {node.frontmatter.image.childImageSharp.fluid}/>
-          ))}
-        </div>
-      )
-    }}
-    
-    />
-
-      </Col>
-      <Col md="4">
-        <div>
-          <Calender/>
-          </div>
-      </Col>
-    </Row>
-    
-     </Layout>
-)
+const EventsPage = () => {
+  const postsPerPage = 2
+  let numberOfPages
+  return (
+    <Layout pageTitle="Events">
+      <SEO title="Events" keywords={[`gatsby`, `application`, `react`]} />
+      <StaticQuery
+        query={eventsQuery}
+        render={data => {
+          numberOfPages = Math.ceil(
+            data.allMarkdownRemark.totalCount / postsPerPage
+          )
+          return (
+            <div>
+              {data.allMarkdownRemark.edges.map(({ node }) => (
+                <Post
+                  key={node.id}
+                  title={node.frontmatter.title}
+                  slug={node.fields.slug}
+                  author={node.frontmatter.author}
+                  body={node.excerpt}
+                  date={node.frontmatter.date}
+                  fluid={node.frontmatter.image.childImageSharp.fluid}
+                  tags={node.frontmatter.tags}
+                />
+              ))}
+              <PaginationLinks currentPage={1} numberOfPages={numberOfPages} />
+            </div>
+          )
+        }}
+      />
+    </Layout>
+  )
+}
 
 const eventsQuery = graphql`
-query{
-  allMarkdownRemark(sort:{ fields: [frontmatter___date], order: DESC}){
-    edges{
-      node{
-        id
-        frontmatter{
-          title
-          date(formatString: "MMM Do YYYY") 
-          author
-          tags
-          image{
-            childImageSharp{
-              fluid(maxWidth: 600){
-                ...GatsbyImageSharpFluid
+  query eventsQuery {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 2
+    ) {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date(formatString: "MMM Do YYYY")
+            author
+            tags
+            image {
+              childImageSharp {
+                fluid(maxWidth: 600) {
+                  ...GatsbyImageSharpFluid
+                }
               }
             }
-            
-          } 
-          
+          }
+          fields {
+            slug
+          }
+          excerpt
         }
-        fields{
-          slug
-        }
-        
-        excerpt
       }
-      
     }
   }
-}
 `
 
 export default EventsPage

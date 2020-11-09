@@ -9,8 +9,8 @@ const IndexPage = () => {
   const postsPerPage = 2
   let numberOfPages
   return (
-    <Layout pageTitle="CodeBlog">
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <Layout pageTitle="News">
+      <SEO title="News" keywords={[`gatsby`, `application`, `react`]} />
       <StaticQuery
         query={indexQuery}
         render={data => {

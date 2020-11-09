@@ -29,8 +29,8 @@ const SinglePost = ({ data, pageContext }) => {
                 />
                 <h1>{post.title}</h1>
                 
-            <Row>
-                <Col md = "8">
+            
+                
                         <Card>
                             <Img className = "card-image-top" fluid={post.image.childImageSharp.fluid}/>
                             <CardBody>
@@ -53,11 +53,8 @@ const SinglePost = ({ data, pageContext }) => {
                         </Card>
                         <DiscussionEmbed shortname={disqusShortname} config={disqusConfig}/>
 
-                </Col>
-                <Col md = "4">
-                    <Sidebar/>
-                </Col>
-            </Row>
+               
+                
            </Layout>
           
     )

@@ -11,50 +11,35 @@ import Sidebar from '../components/Sidebar'
 
 const landingpage = () => (
 
-  
-
 
   <Layout>
-
-
     <SEO title="landingPage"/>
-    <Row>
-    <Col md="6">
-      <br/>
+    <tr>
+      <td>
+    <br/>
     <h1 style={{textAlign: "left"}}>Overview of DSA</h1>
-    <img src = {Landingpageimg} style={{width: '80%'}} alt="pic"/>
+    <br/>
+    <img src = {Landingpageimg} style={{width: '60%'}} alt="pic"/>
     <br/><br/>
     <p>
-    Data science and analytics (DSA) is a data-driven program 
-    applying different fields, including mathematics, computing and 
+    Data science and analytics (DSA) is a data-driven program <br/>
+    applying different fields, including mathematics, computing and <br/>
     domain knowledge.
     </p><p>
-    Graduates of the DSA concentration satisfy the growing need for 
-    jobs requiring skills in effective analysis of data-intensive 
-    problems, meaningful communications with technical and 
-    non-technical audiences through data visualization, 
-    implementing solutions using standard data analytics processes, 
-    and recommending data governance solutions that are secure, 
+    Graduates of the DSA concentration satisfy the growing need for <br/>
+    jobs requiring skills in effective analysis of data-intensive <br/>
+    problems, meaningful communications with technical and <br/>
+    non-technical audiences through data visualization, <br/>
+    implementing solutions using standard data analytics processes, <br/>
+    and recommending data governance solutions that are secure, <br/>
     ethical and minimize risk.
-    </p><br/><br/><br/>
-    </Col>
-      <br/>
-    
-    <Col md= "2"/>
-
-      <Col md="3">
-        <br/>
-        <Row>
-        
-      <h2>Recent Blog Posts</h2>
-      </Row>
-      <Sidebar/>
-      </Col>
-      
-    
-    </Row>
-    
-    
+    </p>
+      </td>
+      <td/><td/><td/>
+    <td>
+   
+    </td>
+    </tr>
      </Layout>
      
 )
