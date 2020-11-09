@@ -9,6 +9,7 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-catch-links',
     'gatsby-transformer-remark',
+    `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -24,6 +25,14 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+     `gatsby-transformer-remark`,
+{
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `src/pages/posts`, // for the path you can change it based on your preferred folder structure
+      },
+},
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
