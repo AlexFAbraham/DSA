@@ -9,9 +9,7 @@ const AboutPage = () => (
   <Layout>
     <SEO title="About" />
     <h1>About us...</h1>
- 
      </Layout>
-     
 )
 
 export default AboutPage

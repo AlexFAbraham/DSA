@@ -35,7 +35,7 @@ const SinglePost = ({ data, pageContext }) => {
                             <Img className = "card-image-top" fluid={post.image.childImageSharp.fluid}/>
                             <CardBody>
                                 <CardSubtitle>
-                                        <span className= "text-info">{post.date}</span> by{''}
+                                        <span className= "text-info">{post.date}</span> by{' '}
                                         <span className="text-info">{post.author}</span>
                                 </CardSubtitle>
                                 <div dangerouslySetInnerHTML={{__html: data.markdownRemark.html}}/>

@@ -80,15 +80,8 @@ const Sidebar = ({ author, authorFluid }) => (
         </CardBody>
       </Card>
     )}
-    <Card>
-      <CardBody>
-        <CardTitle className="text-center text-uppercase mb-3">
-          Calander
-        </CardTitle>
-        
-      </CardBody>
-    </Card>
- 
+    
+    
     <Card>
       <CardBody>
         <CardTitle className="text-center text-uppercase mb-3">
