@@ -91,6 +91,9 @@ class Header extends React.Component{
           <NavLink href="/tags">Tags</NavLink>
 
             <NavItem>
+              <NavLink href="/faq">FAQ</NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink href="/about">About</NavLink>
             </NavItem>
         
