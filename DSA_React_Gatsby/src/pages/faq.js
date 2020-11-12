@@ -51,7 +51,7 @@ const FAQPage = () => (
         <div style = {line}></div>
         <br/>
         <br/>
-        A: You use the Netlify CMS to assign or delete roles for
+        A: You use the Netlify CMS to assign or delete roles for users.
         </div>
         
 
