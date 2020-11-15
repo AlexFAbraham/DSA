@@ -11,7 +11,7 @@ git clone https://github.com/GGC-SD/dsa.git
 Before you can run application, install the application dependences. 
 
 1) Change Directory to where the Project File is
-To do this in Git Bash, type 
+  To do this in Git Bash, type   
 cd dsa
 
 2) Type npm install
