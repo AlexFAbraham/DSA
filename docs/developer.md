@@ -4,7 +4,7 @@ Software Prereq:
 Git
 https://git-scm.com/
 
-After successfully downloading and installing Git, please open Git Bash.
+  After successfully downloading and installing Git, please open Git Bash.  
   Put the following command into Git Bash:  
 git clone https://github.com/GGC-SD/dsa.git
 
