@@ -15,11 +15,11 @@ If you cannot see the repo, please ask Dr. Anca for permission to see it.
 
 After downloading the file, please navigate to  dsa\DSA_React_Gatsby\src\pages\posts in File Explorer. In this folder, you can add a markdown file. You can edit a markdown file easily in NotePad.
 
-After saving your file, open up Git Bash and navigate to where your dsa project is by using ''cd [file location''.
+After saving your file, open up Git Bash and navigate to where your dsa project is by using ''cd file location''
 
 Do the following commands to push your changes to your forked repo:
 
-  `git add .  
+   git add   
   git commit -m "made new blog post"  
    git pull  
   git push`  
