@@ -19,10 +19,10 @@ After saving your file, open up Git Bash and navigate to where your dsa project 
 
 Do the following commands to push your changes to your forked repo:
 
-`git add .
-git commit -m "made new blog post"
-git pull
-git push`
+  `git add .  
+  git commit -m "made new blog post"  
+   git pull  
+  git push`  
 
 Lastly, go back to https://github.com/GGC-SD/dsa and then click on 'New Pull Request'' to request for your changes to be pushed to the original repo.
 
