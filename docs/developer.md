@@ -21,6 +21,9 @@ Note: This might take a while, so hang tight.
   a) cd DSA_React_Gatsby  
 b) gatsby develop
 
-## Documentation Structure
-![docstructure](https://user-images.githubusercontent.com/27105173/99326903-c736a100-2846-11eb-82c6-c5094efc19eb.PNG)
+## GitHub Structure
 
+![a1](https://user-images.githubusercontent.com/27105173/99327277-93a84680-2847-11eb-8247-5387a9cc36c0.PNG)
+
+
+![about src](https://user-images.githubusercontent.com/27105173/99327388-d79b4b80-2847-11eb-90da-88ca8318848d.PNG)
