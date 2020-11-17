@@ -25,5 +25,9 @@ https://github.com/GGC-SD/dsa
 #### PROGRESS TRACKING TOOL AND URL
 JIRA
 
-Azure
-MSSQL server
+### TECH USED
+GATSBY, NETLIFY, REACT, DISQUS
+
+### Deployment Link
+
+https://trusting-hopper-84508b.netlify.app/
