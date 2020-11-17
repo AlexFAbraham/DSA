@@ -1,4 +1,4 @@
-FUTURE TO DO LIST
+# TO DO
 
     Programatically create blog posts
     Admin client routes
