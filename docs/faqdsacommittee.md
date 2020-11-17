@@ -1,8 +1,8 @@
 
 
-FAQ: DSA Committee
+# FAQ: DSA Committee
 
-Q) How can I add blog posts?
+   Q) How can I add blog posts?   
 A) Unfortunately, to add blog posts, you would need to add in your post manually. 
 
 To do that, first make sure you have Git Installed. If you don't have it downloaded, please download and install from here https://git-scm.com/downloads
